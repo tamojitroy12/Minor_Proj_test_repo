@@ -1,0 +1,13 @@
+{
+  "name": "broken-polyglot-monorepo",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "services/node-api"
+  ],
+  "scripts": {
+    "test:node": "npm -w services/node-api test",
+    "start:node": "npm -w services/node-api start",
+    "smoke": "npm -w services/node-api run smoke"
+  }
+}
